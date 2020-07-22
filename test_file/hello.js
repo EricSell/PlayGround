@@ -1,4 +1,5 @@
 // method1
+// 通过exports对象把world作为访问接口
 // exports.world = () => {
 //     console.log('hello world')
 // }
