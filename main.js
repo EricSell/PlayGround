@@ -5,11 +5,30 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    // web选项
     webPreferences: {
       nodeIntegration: true,
-      webviewTag:true
-    }
+      // 使用webview
+      webviewTag:true,
+    },
+    // 开启无边框模式
+    // frame:false,
+    // "优雅"的显示
+    show:false,
+    // backgroundColor:'ffff00',
   })
+  // 只调用一次, 显示主窗口
+  win.once('ready-to-show',()=>{
+    win.show()
+  })
+  // 子窗口,绑定父窗口后,与父窗口同时存在
+  childWin = new BrowserWindow({
+    // 绑定父窗口
+    parent:win,
+    // 设置模态窗口, 此时对父窗口不可操作
+    modal:true,
+  })
+  childWin.show()
 
   // 并且为你的应用加载index.html
   win.loadFile('index.html')
