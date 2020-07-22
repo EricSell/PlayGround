@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>这是弹出的子窗口</h2>
+    <button onclick="sendMessageToParent()">向父窗口传递的信息</button>
+
+</body>
+<script>
+    function sendMessageToParent(){
+        window.opener.postMessage({
+            type:1,
+            msg:'这是子窗口发来的信息',
+        })
+    }
+</script>
+</html>
