@@ -22,6 +22,8 @@
     <list default="true" id="7884ea8a-354a-4a00-aace-994e6acb2588" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/popup_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/render.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,16 @@
       <recent name="D:\Py_file\myfile2\electron_learn" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/main.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.main.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -70,7 +82,8 @@
       <updated>1595403618338</updated>
       <workItem from="1595403619504" duration="7098000" />
       <workItem from="1595411122809" duration="630000" />
-      <workItem from="1595411753753" duration="1028000" />
+      <workItem from="1595411753753" duration="1346000" />
+      <workItem from="1595468017156" duration="21415000" />
     </task>
     <servers />
   </component>
@@ -90,10 +103,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="986" y="317" key="#Notifications" timestamp="1595486079193">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="986" y="317" key="#Notifications/0.40.1536.824@0.40.1536.824" timestamp="1595486079193" />
     <state x="1007" y="210" key="FileChooserDialogImpl" timestamp="1595411751550">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="1007" y="210" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1595411751550" />
+    <state width="599" height="208" key="GridCell.Tab.0.bottom" timestamp="1595469809986">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="599" height="208" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1595469809986" />
+    <state width="599" height="208" key="GridCell.Tab.0.center" timestamp="1595469809986">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="599" height="208" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1595469809986" />
+    <state width="599" height="208" key="GridCell.Tab.0.left" timestamp="1595469809986">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="599" height="208" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1595469809986" />
+    <state width="599" height="208" key="GridCell.Tab.0.right" timestamp="1595469809986">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="599" height="208" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1595469809986" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1595468160867">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.40.1536.824@0.40.1536.824" timestamp="1595468160867" />
     <state x="1009" y="140" width="434" height="630" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1595411576802">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -102,5 +139,9 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="883" y="210" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1595406523672" />
+    <state x="766" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1595483460263">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="766" y="185" width="672" height="678" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1595483460263" />
   </component>
 </project>
