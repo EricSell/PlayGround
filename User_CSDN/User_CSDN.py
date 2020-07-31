@@ -12,7 +12,7 @@ client = MongoClient('mongodb://120.78.234.62:27017/')
 csdn_db = client.CSDN
 user_info = csdn_db['user_info']
 
-logging.basicConfig(filename='/usr/www/CSDN/User_CSDN/logging.log',
+logging.basicConfig(filename='./logging.log',
                     format='%(asctime)s %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     level=logging.DEBUG)
@@ -74,14 +74,12 @@ def to_md5(data):
 user = user_info.find({'username':username}).clone()
 try:
     lasted_data = user.sort('insert_time_stamp',pymongo.DESCENDING)[0].get("user_data")
-
+    print(user.sort('insert_time_stamp',pymongo.DESCENDING)[0])
     lasted = to_md5(lasted_data)
     current = to_md5(insert_template.get('user_data'))
-
+    print(lasted,current)
     if lasted == current:
-        logging.info('信息不变,更新时间')
-        user_info.update_one({'username':username},{'$set':{'insert_time':time.strftime('%Y-%m-%d %H:%M:%S',time.localtime()),
-                                                    'insert_time_stamp':int(time.time())}})
+        pass
     else:
         logging.info('信息改变,新增一条数据')
         user_info.insert_one(insert_template)
