@@ -12,12 +12,13 @@ client = MongoClient('mongodb://120.78.234.62:27017/')
 csdn_db = client.CSDN
 user_info = csdn_db['user_info']
 
-logging.basicConfig(filename='/usr/www/CSDN/User_CSDN/logging.log',
-                    format='%(asctime)s %(message)s',
-                    datefmt='%Y-%m-%d %H:%M:%S',
-                    level=logging.DEBUG)
+logger = logging.getLogger()
+fh = logging.FileHandler("/usr/www/CSDN/User_CSDN/logging.log",encoding="utf-8",mode="a")
+formatter = logging.Formatter("%(asctime)s - %(name)s-%(levelname)s %(message)s")
+fh.setFormatter(formatter)
+logger.addHandler(fh)
+logger.setLevel(logging.INFO)
                     
-# logging.info('重试超过最大次数')
 
 headers = {
     'authority': 'blog.csdn.net',
